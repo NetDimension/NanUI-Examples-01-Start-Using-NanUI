@@ -12,12 +12,11 @@ namespace FirstNanUIApplication
 {
 	using NetDimension.NanUI;
 
-	public partial class Form1 : Formium
+	public partial class Form1 : WinFormium
 	{
 		public Form1()
-			: base("http://cn.bing.com", false)
-			// 第一个参数使用Bing来作为初始的网址，
-			// 第二个参数强制NanUI使用原生的窗体样式来呈现界面
+			: base("http://cn.bing.com")
+			// 使用Bing来作为初始的网址，
 		{
 			InitializeComponent();
 		}
